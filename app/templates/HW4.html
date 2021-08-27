@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/HW4.css') }}">
+</head>
+<body>
+     {% if messagefinal %}
+        <h1>{{ messagefinal }}</h1>
+ <table>
+ <form action="" method="post">
+  <tr>
+    <th style="color: white; font-weight: bold">Employee#</th>
+    <th style="color: white; font-weight: bold">First Name</th>
+    <th style="color: white; font-weight: bold">Last Name</th>
+    <th style="color: white; font-weight: bold">Is_Smoking</th>
+    <th style="color: white; font-weight: bold">ID Number</th>
+    <th style="color: white; font-weight: bold">Birth Date</th>
+  </tr>
+  <tr>
+    <th>#1</th>
+    <th>{{ fname1 }}</th>
+    <th>{{ lname1 }}</th>
+    <th>{{ smoke1 }}</th>
+    <th>{{ ID1 }}</th>
+    <th>{{ BD1 }}</th>
+   <tr>
+    <th>#2</th>
+    <th>{{ fname2 }}</th>
+    <th>{{ lname2 }}</th>
+    <th>{{ smoke2 }}</th>
+    <th>{{ ID2 }}</th>
+    <th>{{ BD2 }}</th>
+  </tr>
+    <tr>
+    <th>#3</th>
+    <th>{{ fname3 }}</th>
+    <th>{{ lname3 }}</th>
+    <th>{{ smoke3 }}</th>
+    <th>{{ ID3 }}</th>
+    <th>{{ BD3 }}</th>
+  </tr>
+   </form>
+ </table>
+    {% else %}
+ <h1>Registration Form</h1><br>
+ <h2>Please enter all Employee's Data</h2><br>
+ <div class="errorGlobal">
+     {% if messageerror %}
+        <p>{{ messageerror }}</p>
+    {% endif %}
+    </div>
+ <table>
+ <form action="" method="post">
+  <tr>
+    <th>Employee#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Is_Smoking</th>
+    <th>ID Number</th>
+    <th>Birth Date</th>
+  </tr>
+  <tr>
+    <th><label for="Employee">#1</label></th>
+    <th><input type = "text" name="fname1" value="{{fname1}}" placeholder = "First Name"><br>
+         {% if message11%}
+        <p class="errorM">{{ message11 }}</p>
+    {% endif %}</th>
+    <th><input type = "text" name = "lname1" value = "{{lname1}}" placeholder = "Last Name"><br>
+         {% if message12%}
+        <p class="errorM">{{ message12 }}</p>
+    {% endif %}</th>
+    <th><select id="smoking1" name="smoking1">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select></th>
+    <th><input type = "text" name = "ID1" value = "{{ID1}}" placeholder = "Your ID number"><br>
+         {% if message14%}
+        <p class="errorM">{{ message14 }}</p>
+    {% endif %}</th>
+    <th><input type="date" name="BDate1" value="{{BDate1}}" placeholder="dd/mm/yyyy"><br>
+         {% if message15%}
+        <p class="errorM">{{ message15 }}</p>
+    {% endif %}</th>
+  </tr>
+  <tr>
+    <th><label for="Employee">#2</label></th>
+    <th><input type = "text" name="fname2" value="{{fname2}}" placeholder = "First Name"><br>
+         {% if message21%}
+        <p class="errorM">{{ message21 }}</p>
+    {% endif %}</th>
+    <th><input type = "text" name = "lname2" value = "{{lname2}}" placeholder = "Last Name"><br>
+         {% if message22%}
+        <p class="errorM">{{ message22 }}</p>
+    {% endif %}</th>
+    <th><select id="smoking2" name="smoking2">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select></th>
+    <th><input type = "text" name = "ID2" value = "{{ID2}}" placeholder = "Your ID number"><br>
+         {% if message24%}
+        <p class="errorM">{{ message24 }}</p>
+    {% endif %}</th>
+    <th><input type="date" name="BDate2" value="{{BDate2}}" placeholder="dd/mm/yyyy"><br>
+         {% if message25%}
+        <p class="errorM">{{ message25 }}</p>
+    {% endif %}</th>
+  </tr>
+  <tr>
+    <th><label for="Employee">#3</label></th>
+    <th><input type = "text" name="fname3" value="{{fname3}}" placeholder = "First Name"><br>
+         {% if message31%}
+        <p class="errorM">{{ message31 }}</p>
+    {% endif %}</th>
+    <th><input type = "text" name = "lname3" value = "{{lname3}}" placeholder = "Last Name"><br>
+         {% if message32%}
+        <p class="errorM">{{ message32 }}</p>
+    {% endif %}</th>
+    <th><select id="smoking3" name="smoking3">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select></th>
+    <th><input type = "text" name = "ID3" value = "{{ID3}}" placeholder = "Your ID number"><br>
+         {% if message34%}
+        <p class="errorM">{{ message34 }}</p>
+    {% endif %}</th>
+    <th><input type="date" name="BDate3" value="{{BDate3}}" placeholder="dd/mm/yyyy"><br>
+         {% if message35%}
+        <p class="errorM">{{ message35 }}</p>
+    {% endif %}</th>
+  </tr>
+  		<tr>
+			<p>
+				<td colspan="6"><input type="submit"></td>
+			</p>
+		</tr>
+  </form>
+ </table>
+ {% endif %}
+</body>
+</html>

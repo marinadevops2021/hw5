@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.2em;
+    font-family: sans-serif;
+    border: white double 5px;
+    border-radius: 50px;
+    display:  inline-block;
+    padding: 15px;
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    display:  inline-block;
+    padding: 15px;
+    text-decoration: underline;
+    font-weight: 300;
+    
+  }
+  .errorM {
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: lighter;
+
+  }
+  .errorGlobal {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: lighter;
+    text-align: left;
+  }
+tr {
+  position: relative;
+  vertical-align: text-top;
+  font-weight: lighter;
+}
+.std {
+  position: relative;
+  vertical-align: text-top;
+  font-weight: lighter;
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+  vertical-align: text-top;
+  text-align: left;
+  font-weight: lighter;
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+}
+  p {
+    font-size: 20px;    
+  }
+ 
+
+
+
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: double;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  td,th{    
+    padding: 5px;
+  }
+
+  input{
+    padding: 5px;
+  }
