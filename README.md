@@ -10,7 +10,7 @@
  2. Image of running container in Visual Studio <br />
   > $ docker ps <br />
  ![Image#2](https://github.com/marinadevops2021/hw5/blob/main/running%20container%20in%20visual%20studio.png)
- 3. Image of Docker Hub website with pusher Home work <br />
+ 3. Image of Docker Hub website after pushing Home work 5 <br />
   > $ docker push marinadevops2021/hw5:final <br />
     ![Image#3](https://github.com/marinadevops2021/hw5/blob/main/docker%20hub%20final%20version.png)
  
